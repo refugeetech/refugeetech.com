@@ -1,0 +1,291 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    {% include head.html %}
+
+    <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+        <div class="container-fluid fullbackground layer">
+            <div class="row-fluid header">
+                <div class="header-logo">
+                    <img src="img/refugee-tech_logo-inverted.png" id="header-image">
+                    <div class="header-text">
+                        <h2 class="hidden-xs">Refugee<br/>Tech</h2>
+                    </div>
+                </div>
+
+                <div class="header-social">
+                    <ul class="list-inline" style="color: #fff;">
+                        <li>
+                            <h3>Follow us</h3>
+                        </li>
+
+                        {% if site.github_username %}
+                            <li>
+                                <a href="https://github.com/{{ site.github_username }}" style="color: #fff;" target="_blank">
+                                    <span class="fa-stack fa-lg social-github">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-github fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        {% endif %}
+
+                        {% if site.facebook_username %}
+                            <li>
+                                <a href="https://www.facebook.com/{{ site.facebook_username }}" style="color: #fff;" target="_blank">
+                                    <span class="fa-stack fa-lg social-facebook">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-facebook fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        {% endif %}
+
+                        {% if site.twitter_username %}
+                            <li>
+                                <a href="https://twitter.com/{{ site.twitter_username }}" style="color: #fff;" target="_blank">
+                                    <span class="fa-stack fa-lg social-twitter">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-twitter fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        {% endif %}
+
+                        {% if site.instagram_username %}
+                            <li>
+                                <a href="https://instagram.com/{{ site.instagram_username }}" style="color: #fff;" target="_blank">
+                                    <span class="fa-stack fa-lg social-instagram">
+                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
+                                        <i class="fa fa-circle fa-stack-2x"></i>
+                                        <i class="fa fa-instagram fa-stack-1x"></i>
+                                    </span>
+                                </a>
+                            </li>
+                        {% endif %}
+                    </ul>
+                </div>
+            </div>
+
+            <div class="col-lg-12 text-center first-block">
+                <h1 style="font-size: 80px;">Combining creative minds and technology, innovating together.</h1>
+
+                <div style="padding-top: 20px;">
+                    <a href="#action"><button class="btn-lg btn-primary btn-top">Take Action!</button></a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding-top: 50px; padding-bottom: 50px; padding-left: 100px; padding-right: 100px; background-color: #fff; color: #03345c;">
+            <div class="container-fluid">
+                <div class="col-lg-3"></div>
+
+                <div class="col-lg-6">
+                    <h1 class="text-center">The second part of the journey</h1>
+                </div>
+
+                <div class="col-lg-3"></div>
+            </div>
+
+            <div class="col-lg-4 text-center" style="padding: 50px;">
+                <img class="img-responsive" src="img/refugee1_2.png" alt="Finally arriving">
+                <h3>Finally Arriving</h3>
+                <p class="lead">People leave unstable areas and the ongoing humanitarian crisis to find safety, reaching their new home, Sweden.</p>
+            </div>
+
+            <div class="col-lg-4 text-center" style="padding: 50px;">
+                <img class="img-responsive" src="img/refugee2_2.png" alt="Settling down">
+                <h3>Settling down</h3>
+                <p class="lead">Upon arrival people struggle with finding their stride and getting life back on track to reach their potential.</p>
+            </div>
+
+            <div class="col-lg-4 text-center" style="padding: 50px;">
+                <img class="img-responsive" src="img/refugee3_2.png" alt="...">
+                <h3>Enabling Potential</h3>
+                <p class="lead">Technology helps new arrivals reach their potential in their new home, Sweden.</p>
+            </div>
+        </div>
+
+        <div class="container-fluid" style="padding: 100px; background-color: #20265B; color: #fff;">
+            <div class="col-lg-7" style="padding: 50px;">
+                <h1 style="font-size: 55px;">This is Refugee Tech</h1>
+
+                <br>
+
+                <p class="lead" style="padding-right: 135px">We build bridges between all parts of society to enable refugees’ potential, relying on efficiently designed and developed technology solutions.</p>
+                <p class="lead" style="padding-right: 135px">In order to solve relevant problems that refugees face, we involve all the stakeholders with knowledge about the crises, including those who are trying to reach out to refugees as well as the refugees themselves.</p>
+                <p class="lead" style="padding-right: 135px">Our method identifies, using methods backed by science and research, the most relevant and urgent problems that can have an innovative tech solution. The best ideas that result from our process get implemented into products that will be released and these products will improve life for thousands of people.</p>
+            </div>
+
+            <div class="col-lg-5">
+                <img class="img-responsive" src="img/plan.png">
+            </div>
+        </div>
+
+        <div id="plan" class="container-fluid" style="padding: 100px; background-color: #fff; color:#d8deee;">
+            <div class="col-lg-4" style="color:#e92e71; padding:50px;">
+                <h1 style="color:#03345c" class="text-center>">Our progress</h1>
+
+                <br>
+
+                <ul style="list-style-type: none;">
+                    <li class="planitem active" data-target="p1">
+                        <h3>1. Problem identification</h3>
+                    </li>
+                    <li class="planitem" data-target="p2">
+                        <h3>2. Idea generation</h3>
+                    </li>
+                    <li class="planitem" data-target="p3">
+                        <h3>3. Hackathon</h3>
+                    </li>
+                    <li class="planitem" data-target="p4">
+                        <h3>4. Open source</h3>
+                    </li>
+                    <li class="planitem" data-target="p5">
+                        <h3>5. Product release</h3>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="col-lg-8" style="padding:50px;" id="accordion">
+                <div class="container-fluid" style="padding-bottom:50px;">
+                    <div class="col-lg-4"></div>
+
+                    <div class="col-lg-4">
+                        <img class="img-responsive" src="img/lightbulb.png" style="float:right;">
+                    </div>
+
+                    <div class="col-lg-4"></div>
+                </div>
+
+                <div id="p1" class="collapse in panel" style="color:#03345c;">
+                    <div>
+                        <h2>1. Problem identification</h2>
+                        <p class="lead">
+                        No single organization or person can know or understand what problems are prioritized, and if solved, will affect the most people. This type of analyzis can only be done through a joint effort. This is what this phase is about. Using scientifically based methods for data gathering, using a structured process, we convey as many relevant stakeholders as possible to understand, prioritize and do proper impact analysis to lay the groundwork for others to come up with sustainable solutions.</p>
+                    </div>
+                </div>
+
+                <div id="p2" class="collapse panel" style="color:#03345c;">
+                    <div>
+                        <h2>2. Idea generation</h2>
+                        <p class="lead">
+                        Sustainable solutions have multiperspective approaches and create positive feedback into society. This phase is about letting people and organizations create teams with different backgrounds that contribute to our understanding of potential solutions. It is an intense learning experience as great solutions demand deep understanding about the problems. The output of this phase will allow for techies, designers and engineers to create technology that implements those solutions.</p>
+                    </div>
+                </div>
+
+                <div id="p3" class="collapse panel" style="color:#03345c;">
+                    <div>
+                        <h2>3. Hackathon</h2>
+                        <p class="lead">
+                            Using an innovative approach to hackathons, we allow for the best solutions to become realized as prototypes. But this phase is much more than coding. Without proper resource commitments it would be impossible to develop prototypes into developed products. Our process is designed so that solutions with high potential will be developed and market tested through dedicated teams, in cooperation with relevant stakeholders, with proper funding.
+                        </p>
+                    </div>
+                </div>
+
+                <div id="p4" class="collapse panel" style="color:#03345c;">
+                    <div>
+                        <h2>4. Open source </h2>
+                        <p class="lead">
+                            Naturally Refugee Tech's products will be open source to allow for anyone to contribute to its development. But this phase is not only about tech, it is about creating the necessary foundation to release a successful product. Hopefully it could lead the way for others to apply similar solutions using our recipes for success(or failure).
+                        </p>
+                    </div>
+                </div>
+
+                <div id="p5" class="collapse panel" style="color:#03345c;">
+                    <div>
+                        <h2>5. Product release </h2>
+                        <p class="lead">
+                            This phase is where we make our final stand. We release the products and services created and make sure that other people and organizations  could carry them on to make an even greater impact that improves the lives of thousands of people.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <div id="action" class="container-fluid" style="padding: 100px; background-color: #20265B; color:#fff;">
+            <div class="container-fluid">
+                <div class="col-lg-6">
+                    <h1 style="font-size:53px;">Help out. Here &amp; now.</h1>
+
+                    <br>
+
+                    <p class="lead" style="padding-right:75px;">
+                        You could be part of an NGO, a company, a programmer, refugee, volunteer, or a social worker. Any person with a will and a good heart can help. Fill out the form and we will be in touch with you.
+                    </p>
+                    <a target="_blank" href="https://refugee1.typeform.com/to/dNCHCf"><button class="btn-lg btn-primary">Help out now</button></a>
+                </div>
+
+                <div class="col-lg-6">
+                    <img class="responsive" src="img/phonehand.png">
+
+                    <br>
+
+                    <p class="lead" style="padding-right:75px;">
+                        If you have a problem you want help solving, please fill in&nbsp;our form explaining it&nbsp;and&nbsp;we will work on the solution
+                    </p>
+                    <a target="_blank" href="https://refugee1.typeform.com/to/l6KJuh"><button class="btn-lg btn-primary">Get support</button></a>
+                </div>
+            </div>
+        </div>
+
+        {% include footer.html %}
+
+        <script>
+            /* global jQuery */
+
+            (function($) {
+                'use strict';
+
+                /**
+                 * Tabs
+                 */
+
+                var $planitem = $('.planitem'),
+                    $collapse = $('.collapse');
+
+                $planitem.on('click', function() {
+                    var $this = $(this),
+                        target = $this.data('target');
+
+                    // set active class
+                    $planitem.removeClass('active');
+                    $this.addClass('active');
+
+                    // collapse all panes
+                    $collapse.collapse('hide');
+
+                    // show this pane
+                    $('#' + target).collapse('show');
+                });
+
+                /**
+                 * Smooth scroll
+                 */
+
+                $('a[href*=#]:not([href=#])').click(function() {
+                    if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
+                        var target = $(this.hash);
+                        target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
+
+                        if (target.length) {
+                            $('html,body').animate({
+                                scrollTop: target.offset().top
+                            }, 1000);
+
+                            return false;
+                        }
+                    }
+                });
+            })(jQuery);
+        </script>
+
+    </body>
+</html>

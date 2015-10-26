@@ -42,6 +42,8 @@
 .fa-stack:hover .fa-circle {
 	display: inline;
 }
+.fa-stack:hover .fa-instagram,
+.fa-stack:hover .fa-github,
 .fa-stack:hover .fa-facebook,
 .fa-stack:hover .fa-twitter {
 	color: #e92e71;
@@ -76,7 +78,7 @@ button.btn-lg.btn-primary.btn-top {
     border: 2px #fff solid;
 }
 
-.fullbackground { 
+.fullbackground {
   display: table;
     position: relative;
     width: 100%;
