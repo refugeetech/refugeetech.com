@@ -1,0 +1,79 @@
+// header wrapper
+.site__header {
+    padding-top: 2.875em;
+    padding-bottom: 2.875em;
+    color: $color-white;
+    background-image: url(/img/background-header.jpg);
+    background-size: cover;
+    background-color: $color-secondary;
+
+    @include clearfix;
+}
+
+// logo
+.site__branding {
+    .shape {
+        fill: $color-white;
+    }
+
+    .shape--rt-mark {
+        width: 44px;
+        height: 44px;
+    }
+
+    .shape--rt {
+        display: none;
+    }
+
+    @media ($mq-medium-up) {
+        .shape--rt-mark {
+            display: none;
+        }
+
+        .shape--rt {
+            display: block;
+            width: 228px;
+            height: 64px;
+        }
+    }
+}
+
+
+// follow us links
+.site__social {
+    line-height: 24px;
+    float: right;
+
+    @media ($mq-medium-up) {
+        font-size: 18px;
+        font-size: 1.125rem;
+    }
+}
+
+.site__social-item {
+    float: left;
+    margin-left: 1em;
+
+    .shape {
+        width: 24px;
+        height: 24px;
+    }
+}
+
+// temp fix for header logo/social on small screens
+@media ($mq-small) {
+    .site__header {
+        .col:first-child {
+            float: left;
+            width: 44px;
+            margin-top: -0.6em;
+            margin-right: 1em;
+        }
+
+        .row {
+            @include clearfix;
+        }
+    }
+}
+
+

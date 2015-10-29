@@ -1,0 +1,14 @@
+.button {
+    display: inline-block;
+    padding: 1em 1.5em;
+    text-decoration: none;
+    color: $color-white;
+    border: 3px solid $color-white;
+    border-radius: 999px;
+    @include grotesque-medium;
+
+    &:hover {
+        color: darken($color-white, 10%);
+        border-color: darken($color-white, 10%);
+    }
+}

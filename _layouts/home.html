@@ -8,235 +8,229 @@
             <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
         <![endif]-->
 
-        <div class="container-fluid fullbackground layer">
-            <div class="row-fluid header">
-                <div class="header-logo">
-                    <img src="img/refugee-tech_logo-inverted.png" id="header-image">
-                    <div class="header-text">
-                        <h2 class="hidden-xs">Refugee<br/>Tech</h2>
-                    </div>
-                </div>
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+            {% include icons.html %}
+        </div>
 
-                <div class="header-social">
-                    <ul class="list-inline" style="color: #fff;">
-                        <li>
-                            <h3>Follow us</h3>
-                        </li>
+        <div class="site">
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
 
-                        {% if site.github_username %}
-                            <li>
-                                <a href="https://github.com/{{ site.github_username }}" style="color: #fff;" target="_blank">
-                                    <span class="fa-stack fa-lg social-github">
-                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-github fa-stack-1x"></i>
-                                    </span>
+            <header class="site__header" role="banner">
+                <div class="container">
+                    <div class="row row--align-middle">
+                        <div class="col">
+                            <div class="site__branding">
+                                <a href="/">
+                                    <svg class="shape shape--rt-mark" aria-hidden="true">
+                                        <use xlink:href="#shape-refugee-tech-mark"></use>
+                                    </svg>
+                                    <svg class="shape shape--rt" aria-hidden="true">
+                                        <use xlink:href="#shape-refugee-tech"></use>
+                                    </svg>
+                                    <h1 class="screen-reader-text">Refugee Tech</h1>
                                 </a>
-                            </li>
-                        {% endif %}
+                            </div>
+                        </div>
 
-                        {% if site.facebook_username %}
-                            <li>
-                                <a href="https://www.facebook.com/{{ site.facebook_username }}" style="color: #fff;" target="_blank">
-                                    <span class="fa-stack fa-lg social-facebook">
-                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-facebook fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        {% endif %}
+                        <div class="col">
+                            <ul class="site__social">
+                                <li class="site__social-item">Follow us:</li>
 
-                        {% if site.twitter_username %}
-                            <li>
-                                <a href="https://twitter.com/{{ site.twitter_username }}" style="color: #fff;" target="_blank">
-                                    <span class="fa-stack fa-lg social-twitter">
-                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-twitter fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        {% endif %}
+                                {% if site.github_username %}
+                                    <li class="site__social-item">
+                                        <a href="https://github.com/{{ site.github_username }}" rel="me" target="_blank">
+                                            <span class="screen-reader-text">Github</span>
+                                            <svg class="shape" aria-hidden="true">
+                                                <use xlink:href="#shape-github"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                {% endif %}
 
-                        {% if site.instagram_username %}
-                            <li>
-                                <a href="https://instagram.com/{{ site.instagram_username }}" style="color: #fff;" target="_blank">
-                                    <span class="fa-stack fa-lg social-instagram">
-                                        <i class="fa fa-circle-thin fa-stack-2x"></i>
-                                        <i class="fa fa-circle fa-stack-2x"></i>
-                                        <i class="fa fa-instagram fa-stack-1x"></i>
-                                    </span>
-                                </a>
-                            </li>
-                        {% endif %}
-                    </ul>
+                                {% if site.facebook_username %}
+                                    <li class="site__social-item">
+                                        <a href="https://facebook.com/{{ site.facebook_username }}" rel="me" target="_blank">
+                                            <span class="screen-reader-text">Facebook</span>
+                                            <svg class="shape" aria-hidden="true">
+                                                <use xlink:href="#shape-facebook"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                {% endif %}
+
+                                {% if site.twitter_username %}
+                                    <li class="site__social-item">
+                                        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me" target="_blank">
+                                            <span class="screen-reader-text">Twitter</span>
+                                            <svg class="shape" aria-hidden="true">
+                                                <use xlink:href="#shape-twitter"></use>
+                                            </svg>
+                                        </a>
+                                    </li>
+                                {% endif %}
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="hero">
+                        <h1 class="hero__title">Creative solutions to real world problems powered by technology and collaboration.</h1>
+
+                        <a class="button" href="#take-action">Take Action!</a>
+                    </div>
                 </div>
+            </header>
+
+            <div id="content">
+                <main class="site__main" role="main">
+
+                    <div class="container second">
+                        <div class="row push--bottom">
+                            <h2>Getting to Sweden is only the first part of the journey. Refugee Tech aims to support refugees in the subsequent phases of their transition:</h2>
+                        </div>
+
+                        <div class="row--padded">
+                            <div class="row">
+                                <div class="col">
+                                    <div class="soft">
+                                        <img src="/img/refugee1.png">
+                                    </div>
+
+                                    <h3>Arrival</h3>
+
+                                    <p>Refugees flee unstable areas to escape ongoing humanitarian crises and seek safety in their new home, Sweden. The arrival is often fraught with trauma and stressful bureaucracy. Providing support to newly arrived refugees in this step is critical to their success.</p>
+                                </div>
+
+                                <div class="col">
+                                    <div class="soft">
+                                        <img src="/img/refugee2.png">
+                                    </div>
+
+                                    <h3>Starting Anew</h3>
+
+                                    <p>Now physically safe, refugees must build an entirely new life in Sweden: seek employment, find a place to live, navigate the Swedish language and customs, and much more. We seek to offer resources and advice to refugees in this step to help refugees navigate the process of starting over in Sweden.</p>
+                                </div>
+
+                                <div class="col">
+                                    <div class="soft">
+                                        <img src="/img/refugee3.png">
+                                    </div>
+
+                                    <h3>Fulfilling Potential</h3>
+
+                                    <p>Often, refugees are put in boxes that deny their talents and contributions, or limit their opportunities due to language and/or cultural barriers. The final step is about breaking down these barriers and allowing people to fulfill their potential as citizens and professionals.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="third">
+                        <div class="container">
+                            <div class="row--padded">
+                                <div class="row row--align-middle">
+                                    <div class="col">
+                                        <h2 class="h1">What We Do</h2>
+
+                                        <p>Technology has historically been at the forefront of human advancement. We believe that together, creative minds can harness technology to solve real world problems. That belief is at the core of our mission: to use technology to connect, collaborate, and innovate in order to solve problems faced by refugees today and in the future.</p>
+
+                                        <p>We build bridges between different parts of society to bring in stakeholders, innovators, and tech-savvy people to design and develop creative solutions. We listen to refugees about the problems they face, to organizations on the ground already working on solutions, and to creative tech people. By bringing these voices into one conversation, we can find real solutions that work.</p>
+
+                                        <p>We use these conversations, along with research and hard data to identify the most relevant and urgent problems that could be solved by innovative technology. The best ideas generated during this process are the ones that we’ll turn into tools and services to improve the lives of thousands of refugees.</p>
+                                    </div>
+                                    <div class="col text-center">
+                                        <img src="/img/what-we-do.png" alt="Entrepreneurs, Developers, Investors, People and Refugees">
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fourth container">
+                        <h2 class="h1">How it Works</h2>
+
+                        <div class="tab-nav">
+                            <ol class="tabs">
+                                <li class="tab is-active">
+                                    <a href="#" data-target="identifying">1. Identifying the Problems</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#" data-target="generating">2. Generating Ideas</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#" data-target="hackathon">3. Hackathon</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#" data-target="evolving">4. Evolving the Solution</a>
+                                </li>
+                                <li class="tab">
+                                    <a href="#" data-target="implementation">5. Implementation</a>
+                                </li>
+                            </ol>
+                        </div>
+                        <div class="tab-container">
+                            <div class="tab-content" id="identifying">
+                                <div class="text-center push--bottom">
+                                    <img src="/img/1_problem.svg">
+                                </div>
+
+                                <p>To make a real difference, we must first identify and prioritize the most urgent problems. To do this we perform a joint analysis, first speaking to refugees and lead organizations and then using scientific processes to gather data and better understand the scope of the problems at hand. This step lays the groundwork for us and our collaborators to identify sustainable solutions.</p>
+                            </div>
+
+                            <div class="tab-content" id="generating" style="display: none;">
+                                <div class="text-center push--bottom">
+                                    <img src="/img/2_idea_lamp.svg">
+                                </div>
+
+                                <p>Now that we’ve identified a problem, we brainstorm to find possible solutions. We bring creative minds from diverse backgrounds together to foster a deeper understanding of the problem in this step. Unique perspectives lead to many potential solutions, which we identify and evaluate before the next step, creating the technology to implement the solution.</p>
+                            </div>
+
+                            <div class="tab-content" id="hackathon" style="display: none;">
+                                <div class="text-center push--bottom">
+                                    <img src="/img/3_hack_colab.svg">
+                                </div>
+
+                                <p>This step is where solutions are built and tested. Our process is designed so that the solutions with the highest potential to solve the problem are the ones that will be developed as prototypes. Techies, designers and engineers take the lead on creating the technology needed to develop these prototypes, which are then market tested by dedicated teams. We involve relevant stakeholders in this process to ensure our solutions have the necessary funding and resources to be fully realized and implemented.</p>
+                            </div>
+
+                            <div class="tab-content" id="evolving" style="display: none;">
+                                <div class="text-center push--bottom">
+                                    <img src="/img/4_open_source_networking_help.svg">
+                                </div>
+
+                                <p>The prototypes created at the hackathon are kept open source so that further improvements and developments can be made by anyone with an interest in solving the problem we’ve identified. This step is about product development, but it’s also about creating the necessary foundation to release the solution into the world. We hope that by keeping our projects open source, we can pave the way for other individuals or organizations to implement our solutions, apply our best practices and/or learn from our mistakes.</p>
+                            </div>
+
+                            <div class="tab-content" id="implementation" style="display: none;">
+                                <p>After thorough research, collaboration, development and testing, we make our solution available - be it a product, service, or digital tool - to the people and organizations who can implement them to make a powerful impact on the lives of people in need.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="fifth" id="take-action">
+                        <div class="container">
+                            <h2>What You Can Do</h2>
+
+                            <div class="row--padded">
+                                <div class="row">
+                                    <div class="col">
+                                        <p>We welcome volunteers from all backgrounds get involved with Refugee Tech. If you have a skill or relevant experience that can help us reach our goal of affecting positive change in the lives of refugees, we want to hear from you. Please fill out our short survey, and we will get in touch.</p>
+
+                                        <a href="https://refugee1.typeform.com/to/dNCHCf" class="button">Get Involved</a>
+                                    </div>
+                                    <div class="col">
+                                        <p>If you have a problem you want help solving, please fill in our form explaining it and we will work on the solution</p>
+
+                                        <a href="https://refugee1.typeform.com/to/l6KJuh" class="button">Begin</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </main>
             </div>
 
-            <div class="col-lg-12 text-center first-block">
-                <h1 style="font-size: 80px;">Combining creative minds and technology, innovating together.</h1>
+            {% include footer.html %}
 
-                <div style="padding-top: 20px;">
-                    <a href="#action"><button class="btn-lg btn-primary btn-top">Take Action!</button></a>
-                </div>
-            </div>
         </div>
-
-        <div class="container-fluid" style="padding-top: 50px; padding-bottom: 50px; padding-left: 100px; padding-right: 100px; background-color: #fff; color: #03345c;">
-            <div class="container-fluid">
-                <div class="col-lg-3"></div>
-
-                <div class="col-lg-6">
-                    <h1 class="text-center">The second part of the journey</h1>
-                </div>
-
-                <div class="col-lg-3"></div>
-            </div>
-
-            <div class="col-lg-4 text-center" style="padding: 50px;">
-                <img class="img-responsive" src="img/refugee1_2.png" alt="Finally arriving">
-                <h3>Finally Arriving</h3>
-                <p class="lead">People leave unstable areas and the ongoing humanitarian crisis to find safety, reaching their new home, Sweden.</p>
-            </div>
-
-            <div class="col-lg-4 text-center" style="padding: 50px;">
-                <img class="img-responsive" src="img/refugee2_2.png" alt="Settling down">
-                <h3>Settling down</h3>
-                <p class="lead">Upon arrival people struggle with finding their stride and getting life back on track to reach their potential.</p>
-            </div>
-
-            <div class="col-lg-4 text-center" style="padding: 50px;">
-                <img class="img-responsive" src="img/refugee3_2.png" alt="...">
-                <h3>Enabling Potential</h3>
-                <p class="lead">Technology helps new arrivals reach their potential in their new home, Sweden.</p>
-            </div>
-        </div>
-
-        <div class="container-fluid" style="padding: 100px; background-color: #20265B; color: #fff;">
-            <div class="col-lg-7" style="padding: 50px;">
-                <h1 style="font-size: 55px;">This is Refugee Tech</h1>
-
-                <br>
-
-                <p class="lead" style="padding-right: 135px">We build bridges between all parts of society to enable refugees’ potential, relying on efficiently designed and developed technology solutions.</p>
-                <p class="lead" style="padding-right: 135px">In order to solve relevant problems that refugees face, we involve all the stakeholders with knowledge about the crises, including those who are trying to reach out to refugees as well as the refugees themselves.</p>
-                <p class="lead" style="padding-right: 135px">Our method identifies, using methods backed by science and research, the most relevant and urgent problems that can have an innovative tech solution. The best ideas that result from our process get implemented into products that will be released and these products will improve life for thousands of people.</p>
-            </div>
-
-            <div class="col-lg-5">
-                <img class="img-responsive" src="img/plan.png">
-            </div>
-        </div>
-
-        <div id="plan" class="container-fluid" style="padding: 100px; background-color: #fff; color:#d8deee;">
-            <div class="col-lg-4" style="color:#e92e71; padding:50px;">
-                <h1 style="color:#03345c" class="text-center>">Our progress</h1>
-
-                <br>
-
-                <ul style="list-style-type: none;">
-                    <li class="planitem active" data-target="p1">
-                        <h3>1. Problem identification</h3>
-                    </li>
-                    <li class="planitem" data-target="p2">
-                        <h3>2. Idea generation</h3>
-                    </li>
-                    <li class="planitem" data-target="p3">
-                        <h3>3. Hackathon</h3>
-                    </li>
-                    <li class="planitem" data-target="p4">
-                        <h3>4. Open source</h3>
-                    </li>
-                    <li class="planitem" data-target="p5">
-                        <h3>5. Product release</h3>
-                    </li>
-                </ul>
-            </div>
-
-            <div class="col-lg-8" style="padding:50px;" id="accordion">
-                <div class="container-fluid" style="padding-bottom:50px;">
-                    <div class="col-lg-4"></div>
-
-                    <div class="col-lg-4">
-                        <img class="img-responsive" src="img/lightbulb.png" style="float:right;">
-                    </div>
-
-                    <div class="col-lg-4"></div>
-                </div>
-
-                <div id="p1" class="collapse in panel" style="color:#03345c;">
-                    <div>
-                        <h2>1. Problem identification</h2>
-                        <p class="lead">
-                        No single organization or person can know or understand what problems are prioritized, and if solved, will affect the most people. This type of analyzis can only be done through a joint effort. This is what this phase is about. Using scientifically based methods for data gathering, using a structured process, we convey as many relevant stakeholders as possible to understand, prioritize and do proper impact analysis to lay the groundwork for others to come up with sustainable solutions.</p>
-                    </div>
-                </div>
-
-                <div id="p2" class="collapse panel" style="color:#03345c;">
-                    <div>
-                        <h2>2. Idea generation</h2>
-                        <p class="lead">
-                        Sustainable solutions have multiperspective approaches and create positive feedback into society. This phase is about letting people and organizations create teams with different backgrounds that contribute to our understanding of potential solutions. It is an intense learning experience as great solutions demand deep understanding about the problems. The output of this phase will allow for techies, designers and engineers to create technology that implements those solutions.</p>
-                    </div>
-                </div>
-
-                <div id="p3" class="collapse panel" style="color:#03345c;">
-                    <div>
-                        <h2>3. Hackathon</h2>
-                        <p class="lead">
-                            Using an innovative approach to hackathons, we allow for the best solutions to become realized as prototypes. But this phase is much more than coding. Without proper resource commitments it would be impossible to develop prototypes into developed products. Our process is designed so that solutions with high potential will be developed and market tested through dedicated teams, in cooperation with relevant stakeholders, with proper funding.
-                        </p>
-                    </div>
-                </div>
-
-                <div id="p4" class="collapse panel" style="color:#03345c;">
-                    <div>
-                        <h2>4. Open source </h2>
-                        <p class="lead">
-                            Naturally Refugee Tech's products will be open source to allow for anyone to contribute to its development. But this phase is not only about tech, it is about creating the necessary foundation to release a successful product. Hopefully it could lead the way for others to apply similar solutions using our recipes for success(or failure).
-                        </p>
-                    </div>
-                </div>
-
-                <div id="p5" class="collapse panel" style="color:#03345c;">
-                    <div>
-                        <h2>5. Product release </h2>
-                        <p class="lead">
-                            This phase is where we make our final stand. We release the products and services created and make sure that other people and organizations  could carry them on to make an even greater impact that improves the lives of thousands of people.
-                        </p>
-                    </div>
-                </div>
-            </div>
-        </div>
-
-        <div id="action" class="container-fluid" style="padding: 100px; background-color: #20265B; color:#fff;">
-            <div class="container-fluid">
-                <div class="col-lg-6">
-                    <h1 style="font-size:53px;">Help out. Here &amp; now.</h1>
-
-                    <br>
-
-                    <p class="lead" style="padding-right:75px;">
-                        You could be part of an NGO, a company, a programmer, refugee, volunteer, or a social worker. Any person with a will and a good heart can help. Fill out the form and we will be in touch with you.
-                    </p>
-                    <a target="_blank" href="https://refugee1.typeform.com/to/dNCHCf"><button class="btn-lg btn-primary">Help out now</button></a>
-                </div>
-
-                <div class="col-lg-6">
-                    <img class="responsive" src="img/phonehand.png">
-
-                    <br>
-
-                    <p class="lead" style="padding-right:75px;">
-                        If you have a problem you want help solving, please fill in&nbsp;our form explaining it&nbsp;and&nbsp;we will work on the solution
-                    </p>
-                    <a target="_blank" href="https://refugee1.typeform.com/to/l6KJuh"><button class="btn-lg btn-primary">Get support</button></a>
-                </div>
-            </div>
-        </div>
-
-        {% include footer.html %}
 
         <script>
             /* global jQuery */
@@ -248,22 +242,20 @@
                  * Tabs
                  */
 
-                var $planitem = $('.planitem'),
-                    $collapse = $('.collapse');
+                var $tab = $('.tab'),
+                    $tabs = $('.tabs'),
+                    $tabContent = $('.tab-content');
 
-                $planitem.on('click', function() {
+                $tab.find('a').on('click', function(e) {
+                    e.preventDefault();
+
                     var $this = $(this),
                         target = $this.data('target');
 
-                    // set active class
-                    $planitem.removeClass('active');
-                    $this.addClass('active');
-
-                    // collapse all panes
-                    $collapse.collapse('hide');
-
-                    // show this pane
-                    $('#' + target).collapse('show');
+                    $tabs.find('.is-active').removeClass('is-active');
+                    $this.parent().addClass('is-active');
+                    $tabContent.hide();
+                    $('#' + target).show();
                 });
 
                 /**
@@ -284,8 +276,8 @@
                         }
                     }
                 });
+
             })(jQuery);
         </script>
-
     </body>
 </html>

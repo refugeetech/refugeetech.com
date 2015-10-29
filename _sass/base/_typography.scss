@@ -1,0 +1,65 @@
+html {
+    font-size: 100%;
+
+    font-kerning: normal; // Set the default for kerning
+    font-synthesis: none; // Don't allow the font to create sythetic bold/italic
+    // Stop iPhone/iPad from scaling text
+    // Absolute measure here, as we're talking about devices, not screen size
+    @media screen and (max-width: 769px) {
+        -webkit-text-size-adjust: none;
+    }
+}
+
+body {
+    color: $color-secondary;
+    line-height: 1.375;
+    @include grotesque-regular;
+}
+
+.h1,
+h1 {
+    font-size: 42px;
+    font-size: 2.625rem;
+    line-height: 1.1;
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+.h2,
+h2 {
+    font-size: 26px;
+    font-size: 1.625rem;
+    line-height: 1.2;
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+.h3,
+h3 {
+    font-size: 20px;
+    font-size: 1.25rem;
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+.h4,
+h4 {
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+.h5,
+h5 {
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+.h6,
+h6 {
+    margin-bottom: 1em;
+    @include grotesque-medium;
+}
+
+p {
+    margin-bottom: 1em;
+}
