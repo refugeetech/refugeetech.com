@@ -1,0 +1,34 @@
+.site__footer {
+    @include section-spacing;
+
+    .shape {
+        fill: $color-secondary;
+        height: 36px;
+        width: 124px;
+    }
+
+    h3 {
+        margin-bottom: 0.5em;
+    }
+
+    ul {
+        margin-top: 1em;
+
+        @media ($mq-medium-up) {
+            float: right;
+            margin-top: 0;
+        }
+    }
+
+    li {
+        &:last-child {
+            @media ($mq-small) {
+                margin-top: 1em;
+            }
+        }
+        @media ($mq-medium-up) {
+            float: left;
+            margin-left: 1em;
+        }
+    }
+}

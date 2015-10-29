@@ -1,0 +1,33 @@
+.tabs {
+    margin-left: -1em;
+}
+
+.tab {
+    padding: 1em 0;
+    &.is-active {
+        a,
+        a:hover {
+            padding: 1em 1.5em;
+            text-decoration: none;
+            color: $color-white;
+            background-color: $color-primary;
+        }
+    }
+    a {
+        padding: 1em 1.5em;
+        text-decoration: none;
+        color: $color-primary;
+        border-radius: 999px;
+        background-color: $color-white;
+        &:hover {
+            background-color: #efefef;
+        }
+    }
+}
+
+.tab-content {
+    img {
+        max-width: 130px;
+        max-height: 130px;
+    }
+}

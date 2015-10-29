@@ -1,0 +1,72 @@
+// A lot of these classes carry `!important` as you will always want them to win
+// out over other selectors.
+
+$directions: top, right, bottom, left;
+
+// margins
+
+.push {
+    margin: 1rem !important;
+}
+
+@each $direction in $directions {
+    .push--#{$direction} {
+        margin-#{$direction}: 1rem !important;
+    }
+}
+
+// paddings
+
+.soft {
+    padding: 1rem !important;
+}
+
+@each $direction in $directions {
+    .soft--#{$direction} {
+        padding-#{$direction}: 1rem !important;
+    }
+}
+
+// add/remove floats
+
+.float-right {
+    float: right!important;
+}
+
+.float-left {
+    float: left !important;
+}
+
+.float-none {
+    float: none !important;
+}
+
+// text alignment
+
+.text-left {
+    text-align: left  !important;
+}
+
+.text-center {
+    text-align: center!important;
+}
+
+.text-right {
+    text-align: right !important;
+}
+
+// rwd
+
+@media ($mq-small) {
+    .hide-small {
+        display: none !important;
+    }
+}
+
+.show-large {
+    display: none !important;
+
+    @media ($mq-large-up) {
+        display: block !important;
+    }
+}

@@ -1,0 +1,101 @@
+/**
+ * Hero
+ * Creative solutions to real world problems powered by technology and...
+ */
+
+.hero {
+    margin-top: 1.35em;
+
+    @media ($mq-medium-up) {
+        margin-bottom: 4em;
+    }
+
+    @media ($mq-large-up) {
+        padding-left: 50%;
+
+        .button {
+            font-size: 22px;
+            font-size: 1.375rem;
+        }
+    }
+}
+
+.hero__title {
+    margin-bottom: 0.55em;
+
+    @media ($mq-medium-up) {
+        font-size: 60px;
+        font-size: 3.75rem;
+        margin-top: 1em;
+    }
+
+    @media ($mq-large-up) {
+        font-size: 80px;
+        font-size: 5rem;
+        line-height: 1.05;
+        margin-top: 0;
+    }
+}
+
+
+
+
+
+/**
+ * 2nd section
+ * Getting to Sweden is only the first part of the journey...
+ */
+
+.second {
+    text-align: center;
+
+    @include section-spacing;
+
+    img {
+        max-width: 74%;
+    }
+}
+
+
+
+
+
+/**
+ * 3rd section
+ * What We Do
+ */
+
+.third {
+    color: $color-white;
+    background-color: $color-secondary;
+
+    @include section-spacing;
+}
+
+
+
+
+
+/**
+ * 4th section
+ * How it Works
+ */
+
+.fourth {
+    @include section-spacing;
+}
+
+
+
+
+
+/**
+ * 5th section
+ * Get involved
+ */
+.fifth {
+    color: $color-white;
+    background-color: $color-secondary;
+
+    @include section-spacing;
+}
