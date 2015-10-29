@@ -70,3 +70,11 @@ $directions: top, right, bottom, left;
         display: block !important;
     }
 }
+
+.col.show-large {
+    display: none !important;
+
+    @media ($mq-large-up) {
+        display: table-cell !important;
+    }
+}

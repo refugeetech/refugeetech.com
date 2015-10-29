@@ -16,7 +16,7 @@
  * The Grid
  */
 
-@media (min-width: 600px) {
+@media ($mq-medium-up) {
     /* Add `.grid` for the table */
     .row {
         display: table;

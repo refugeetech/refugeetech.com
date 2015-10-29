@@ -83,9 +83,29 @@
 
 .fourth {
     @include section-spacing;
+    @include clearfix;
+
+    h2 {
+        text-align: center;
+
+        @media ($mq-large-up) {
+            text-align: left;
+        }
+    }
 }
 
-
+.tab-nav {
+    @media ($mq-large-up) {
+        float: left;
+        width: 25%;
+    }
+}
+.tab-container {
+    @media ($mq-large-up) {
+        float: left;
+        width: 75%;
+    }
+}
 
 
 

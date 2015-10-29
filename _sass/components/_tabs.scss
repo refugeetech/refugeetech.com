@@ -1,26 +1,38 @@
 .tabs {
-    margin-left: -1em;
+    margin-right: 2em;
+    margin-left: 2em;
+
+    @media ($mq-large-up) {
+        margin-right: 0;
+        margin-left: -1em;
+    }
 }
 
 .tab {
-    padding: 1em 0;
+    margin-bottom: .5em;
+
     &.is-active {
         a,
         a:hover {
-            padding: 1em 1.5em;
-            text-decoration: none;
             color: $color-white;
             background-color: $color-primary;
         }
     }
+
     a {
+        display: block;
         padding: 1em 1.5em;
         text-decoration: none;
         color: $color-primary;
         border-radius: 999px;
         background-color: $color-white;
+
         &:hover {
             background-color: #efefef;
+        }
+
+        @media ($mq-large-up) {
+            display: inline-block;
         }
     }
 }

@@ -60,3 +60,20 @@
     }
 }
 
+// temp fix for header logo/social on small screens
+@media ($mq-small) {
+    .site__header {
+        .col:first-child {
+            float: left;
+            width: 44px;
+            margin-top: -0.6em;
+            margin-right: 1em;
+        }
+
+        .row {
+            @include clearfix;
+        }
+    }
+}
+
+
