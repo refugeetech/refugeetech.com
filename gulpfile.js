@@ -18,3 +18,10 @@ gulp.task('svg', function () {
     .pipe(rename('icons.html'))
     .pipe(gulp.dest('_includes'));
 });
+
+gulp.task('svg:minify', function () {
+  return gulp
+    .src('img/*.svg')
+    .pipe(svgmin())
+    .pipe(gulp.dest('img'));
+});
