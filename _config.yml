@@ -10,5 +10,6 @@ facebook_username: "refugeetech"
 # Build settings
 markdown: kramdown
 exclude: [node_modules]
+permalink: pretty
 sass:
   style: compressed
