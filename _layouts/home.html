@@ -17,60 +17,8 @@
 
             <header class="site__header" role="banner">
                 <div class="container">
-                    <div class="row row--align-middle">
-                        <div class="col">
-                            <div class="site__branding">
-                                <a href="/">
-                                    <svg class="shape shape--rt-mark" aria-hidden="true">
-                                        <use xlink:href="#shape-refugee-tech-mark"></use>
-                                    </svg>
-                                    <svg class="shape shape--rt" aria-hidden="true">
-                                        <use xlink:href="#shape-refugee-tech"></use>
-                                    </svg>
-                                    <h1 class="screen-reader-text">Refugee Tech</h1>
-                                </a>
-                            </div>
-                        </div>
 
-                        <div class="col">
-                            <ul class="site__social">
-                                <li class="site__social-item">Follow us:</li>
-
-                                {% if site.github_username %}
-                                    <li class="site__social-item">
-                                        <a href="https://github.com/{{ site.github_username }}" rel="me" target="_blank">
-                                            <span class="screen-reader-text">Github</span>
-                                            <svg class="shape" aria-hidden="true">
-                                                <use xlink:href="#shape-github"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                {% endif %}
-
-                                {% if site.facebook_username %}
-                                    <li class="site__social-item">
-                                        <a href="https://facebook.com/{{ site.facebook_username }}" rel="me" target="_blank">
-                                            <span class="screen-reader-text">Facebook</span>
-                                            <svg class="shape" aria-hidden="true">
-                                                <use xlink:href="#shape-facebook"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                {% endif %}
-
-                                {% if site.twitter_username %}
-                                    <li class="site__social-item">
-                                        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me" target="_blank">
-                                            <span class="screen-reader-text">Twitter</span>
-                                            <svg class="shape" aria-hidden="true">
-                                                <use xlink:href="#shape-twitter"></use>
-                                            </svg>
-                                        </a>
-                                    </li>
-                                {% endif %}
-                            </ul>
-                        </div>
-                    </div>
+                    {% include header.html %}
 
                     <div class="hero">
                         <h1 class="hero__title">Creative solutions to real world problems powered by technology and collaboration.</h1>
