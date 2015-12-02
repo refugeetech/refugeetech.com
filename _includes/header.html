@@ -19,14 +19,14 @@
                 {% for page in site.pages %}
                     {% if page.title %}
                         <li class="main-menu__item">
-                            <a class="page-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
+                            <a class="main-menu__item-link" href="{{ page.url | prepend: site.baseurl }}">{{ page.title }}</a>
                         </li>
                     {% endif %}
                 {% endfor %}
 
                 {% if site.github_username %}
                     <li class="main-menu__item">
-                        <a href="https://github.com/{{ site.github_username }}" rel="me" target="_blank">
+                        <a class="main-menu__item-link" href="https://github.com/{{ site.github_username }}" rel="me" target="_blank">
                             <span class="screen-reader-text">Github</span>
                             <svg class="shape" aria-hidden="true">
                                 <use xlink:href="#shape-github"></use>
@@ -37,7 +37,7 @@
 
                 {% if site.facebook_username %}
                     <li class="main-menu__item">
-                        <a href="https://facebook.com/{{ site.facebook_username }}" rel="me" target="_blank">
+                        <a class="main-menu__item-link" href="https://facebook.com/{{ site.facebook_username }}" rel="me" target="_blank">
                             <span class="screen-reader-text">Facebook</span>
                             <svg class="shape" aria-hidden="true">
                                 <use xlink:href="#shape-facebook"></use>
@@ -48,7 +48,7 @@
 
                 {% if site.twitter_username %}
                     <li class="main-menu__item">
-                        <a href="https://twitter.com/{{ site.twitter_username }}" rel="me" target="_blank">
+                        <a class="main-menu__item-link" href="https://twitter.com/{{ site.twitter_username }}" rel="me" target="_blank">
                             <span class="screen-reader-text">Twitter</span>
                             <svg class="shape" aria-hidden="true">
                                 <use xlink:href="#shape-twitter"></use>

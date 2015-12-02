@@ -4,12 +4,27 @@
     {% include head.html %}
 
     <body>
+        <!--[if lt IE 8]>
+            <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
 
-        {% include header.html %}
+        <div style="height: 0; width: 0; position: absolute; visibility: hidden">
+            {% include icons.html %}
+        </div>
 
-        <div class="page-content">
-            <div class="wrapper">
-                {{ content }}
+        <div class="site">
+            <a class="skip-link screen-reader-text" href="#content">Skip to content</a>
+
+            <header class="site__header" role="banner">
+                <div class="container">
+                    {% include header.html %}
+                </div>
+            </header>
+
+            <div id="content">
+                <main class="site__main" role="main">
+                    {{ content }}
+                </main>
             </div>
         </div>
 

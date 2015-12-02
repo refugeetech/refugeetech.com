@@ -2,12 +2,15 @@
 .site__header {
     padding-top: 1em;
     padding-bottom: 2.875em;
-    color: $color-white;
-    background-image: url(/img/background-header.jpg);
-    background-size: cover;
-    background-color: $color-secondary;
 
     @include clearfix;
+
+    .start-page & {
+        color: $color-white;
+        background-image: url(/img/background-header.jpg);
+        background-size: cover;
+        background-color: $color-secondary;
+    }
 
     @media ($mq-medium-up) {
         padding-top: 2.875em;
@@ -17,7 +20,10 @@
 // logo
 .site__branding {
     .shape {
-        fill: $color-white;
+        fill: $color-secondary;
+        .start-page & {
+            fill: $color-white;
+        }
     }
 
     .shape--rt-mark {
@@ -39,28 +45,6 @@
             width: 228px;
             height: 64px;
         }
-    }
-}
-
-
-// follow us links
-.main-menu {
-    line-height: 24px;
-    float: right;
-
-    @media ($mq-medium-up) {
-        font-size: 18px;
-        font-size: 1.125rem;
-    }
-}
-
-.main-menu__item {
-    float: left;
-    margin-left: 1em;
-
-    .shape {
-        width: 24px;
-        height: 24px;
     }
 }
 
