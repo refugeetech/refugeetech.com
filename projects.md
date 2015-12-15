@@ -4,8 +4,15 @@ title: Projects
 permalink: /projects/
 ---
 
-This is the base Jekyll theme. You can find out more info about customizing your Jekyll theme, as well as basic Jekyll usage documentation at [jekyllrb.com](http://jekyllrb.com/)
+<div class="container">
+  {% for project in site.projects %}
+    <h2>{{project.name}}</h2>
+    <small>{{project.status}}</small>
+    {{project.content}}
+  {% endfor %}
+</div>
 
-You can find the source code for the Jekyll new theme at: [github.com/jglovier/jekyll-new](https://github.com/jglovier/jekyll-new)
-
-You can find the source code for Jekyll at [github.com/jekyll/jekyll](https://github.com/jekyll/jekyll)
+<div class="container">
+  <h2>Do you also want to be a part of this community?</h2>
+  <p>We welcome volonteers from all backgrounds to get involved with Refugee Tech. If you have a skill or relevant experience that can help us reach our goal of affecting positive change in the lives of refugees, we want o head from you.</p>
+</div>
