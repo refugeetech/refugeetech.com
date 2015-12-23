@@ -1,6 +1,10 @@
 ---
-name: "Refugee Air"
-status: "In progress"
+name: "Projectname"
+currentStage: "Status"
+projectDescription: "Description"
+contactPersonId: "by"
+postalAddress.city: "Place"
+postalAddress.country: "Place"
+links: "Website"
+targetPlatforms: "Type"
 ---
-
-Refugee Air is an initiative by a group of action-drivern entrepreneurs and humanitarians. We know how to solve problems and get things done and we want to make a difference right now. We're putting crowd-sourced competencies and our extensive network to work to save lives and drive positive change.
