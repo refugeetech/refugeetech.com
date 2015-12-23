@@ -7,7 +7,7 @@ permalink: /projects/
 <div class="container">
   {% for project in site.projects %}
     <h2>{{project.name}}</h2>
-    <small>{{project.status}}</small>
+    <small>{{project.currentStage}}</small>
     {{project.content}}
   {% endfor %}
 </div>

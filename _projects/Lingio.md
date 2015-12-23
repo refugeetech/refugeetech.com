@@ -8,3 +8,4 @@ postalAddress.city: "Stockholm"
 postalAddress.country: "Sweden"
 links: "http://lingio.co"
 ---
+A fun way of learning languages
